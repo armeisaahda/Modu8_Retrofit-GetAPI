@@ -58,7 +58,6 @@ class RVAdapter(
             intent.putExtras(bundle)
             context.startActivity(intent)
         }
-
     }
     override fun getItemCount(): Int = dataList.size
     fun setData(data: List<Mahasiswa>) {
@@ -80,9 +79,9 @@ class RVAdapter(
                         // Find the index of the deleted item in the dataList
                         val index = dataList.indexOfFirst { it.nim == nim }
                         if (index != -1 && index < dataList.size) {
-                            // Remove the item from the dataList
+                            // Menghapus item didatalis
                             dataList.removeAt(index)
-                            // Notify the adapter that the item has been removed
+                            // Notifikasi bahwa ada data yang dihapus
                             notifyItemRemoved(index)
                             Toast.makeText(context, "Data terhapus", Toast.LENGTH_SHORT).show()
                         }

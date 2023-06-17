@@ -39,12 +39,10 @@
         android:drawablePadding="10dp"
         android:hint="Nim"
         android:inputType="none"
-        android:enabled="false"
-        >
+        android:enabled="false">
 
     </com.google.android.material.textfield.TextInputEditText>
   </com.google.android.material.textfield.TextInputLayout>
-
 
   <com.google.android.material.textfield.TextInputLayout
       android:id="@+id/editTextNama"
